@@ -12,6 +12,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <script src="Functionalities.js" ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,7 @@
             <h3>Book Ocean Time</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh" id="from">
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh" id="from">
             </div>
             <div class="input-group">
                 <label for="">Flying To</label>
@@ -62,7 +63,7 @@
                     <input class="inp-style inp-width" type="number" name="" id="firstclass", value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p><span onclick="handleProductChange('firstclass',true)">+</span> <span onclick="handleProductChange('firstclass', false)">-</span> </p>
+                    <p><span onclick="handleTickets('firstclass',true)">+</span> <span onclick="handleTickets('firstclass', false)">-</span> </p>
                 </div>
             </div>
             
@@ -72,7 +73,7 @@
                     <input class="inp-style inp-width" type="number" name="" value="0" id="economy">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span onclick="handleProductChange('economy', true)">+</span> <span span onclick="handleProductChange('economy', false)">-</span> </p>
+                    <p> <span onclick="handleTickets('economy', true)">+</span> <span span onclick="handleTickets('economy', false)">-</span> </p>
                 </div>
             </div>
             <div class="calculations">
